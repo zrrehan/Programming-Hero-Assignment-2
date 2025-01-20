@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* shared styles  */
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* styling div  */
+nav {
+    height: 102px;
+
+}
+.anchor-div {
+    height: 30px;
+    width: 387px;
+    justify-content: space-between;
+}
+
+.anchor-div > a {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.nav-content {
+    /* background-color: red; */
+    height: 62px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 62px;
+    width: 14%;
+    justify-content: space-between;
+}
+
+.nav-content > button {
+    width: 13.6%;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 12px;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        border-bottom: 0.5px solid orange;
+    }
+    #hamburger {
+        display: block;
+        font-size: 1.875rem;
+    }
+
+    .logo > h1, .anchor-div, .nav-content > button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    .anchor-div, .nav-content > button {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+        font-size: 1.875rem;
+    }
+}
