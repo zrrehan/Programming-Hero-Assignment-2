@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
 * {
     padding: 0px;
     margin: 0px;
+}
+
+/* shared styling  */
+.gray-writings {
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.95rem;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 nav {
@@ -91,6 +101,9 @@ nav > button {
     margin: 24px 0px;
 
 }
+.hero-section > img {
+    width: 100%;
+}
 
 .black-btn {
     color: white;
@@ -100,6 +113,7 @@ nav > button {
     border: none;
     border-radius: 12px;
     font-size: 1.25rem;
+    font-weight: 700;
 }
 
 /* designing Curriculum  */
@@ -195,6 +209,9 @@ nav > button {
     cursor: pointer;
 }
 @media screen and (max-width: 576px) {
+    .gray-writings {
+        font-size: 0.625rem;
+    }
     #hamburger {
         display: block;
         font-size: 1.875rem;
@@ -215,11 +232,48 @@ nav > button {
         display: none;
     }
 
+    .hero-writings > p {
+        padding: 0px 17px;
+    }
+
+    .black-btn {
+        height: 42px;
+        width: 131px;
+        font-size: 1rem;
+    }
+
+    .hero-writings > h1 > span {
+        font-size: 2rem;
+    }
+
+    .hero-writings > p {
+        font-size: 0.875rem;
+    }
+
     /* designing curriculum  */
     .curriculum-card-container {
         flex-direction: column;
+        align-items: center;
     }
     .arrow-button-container {
         display: none;
+    }
+
+    .curriculum > h1 {
+        font-size: 1.625rem;
+    }
+    .curriculum-card {
+        padding: 0px;
+        margin: 0px;
+        width: 50%;
+        padding: 40px 20vw;
+    }
+
+    .curriculum-card > .gray-writings {
+        margin-bottom: 22px;
+    }
+
+    .read-more-1, .read-more-2, .read-more-3 {
+        font-size: 0.625rem;
     }
 }
