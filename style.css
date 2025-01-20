@@ -45,6 +45,7 @@ nav {
 a {
     text-decoration: none;
     font-size: 1.25rem;
+    font-weight: 500;
 }
 
 nav > button {
@@ -61,6 +62,46 @@ nav > button {
     display: none;
 }
 
+/* designing hero section  */
+.hero-section {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1160px;
+}
+
+.hero-writings > h1 > span {
+    font-size: 3.5rem;  
+    font-weight: 700;
+}
+
+#orange-writing-hero {
+    color: orange;
+}
+
+#skyblue--writing-hero {
+    color: #01ACFD
+}
+
+.hero-writings > p {
+    font-size: 1.25rem;
+    margin: 24px 0px;
+
+}
+
+.black-btn {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 197px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.25rem;
+}
+
 @media screen and (max-width: 576px) {
     #hamburger {
         display: block;
@@ -68,6 +109,17 @@ nav > button {
     }
 
     .anchor-div, nav>button, .logo > h1 {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .hero-writings {
+        text-align: center;
+    } 
+
+    .hero-writings > h1 > span > br {
         display: none;
     }
 }
