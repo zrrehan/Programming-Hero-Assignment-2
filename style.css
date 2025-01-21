@@ -233,8 +233,12 @@ nav > button {
 }
 
 .big-card, .small-card-container {
-    height: 630px;
-    width: 540px;
+    height: 43.7vw;
+    width: 37.5vw;
+}
+
+.big-card > img {
+    width: 100%;
 }
 
 .small-card-container {
@@ -247,17 +251,18 @@ nav > button {
     border: none;
     border-radius: 48px;
     font-family: "Raleway", serif;
-    height: 47px;
-    width: 174px;
+    /* height: 3vw;
+    width: 12vw; */
+    padding: 0.69vw 1.3vw;
     color: white;
-    margin-left: 38px;
+    /* margin-left: 38px; */
+    margin-left: 2vw;
     position: relative;
-    top:-30px;
+    top:-1.7vw;
 }
 
 .small-card > .card-buttons {
-    height: 38px;
-    top:-25px
+    top: -1.7vw
 }
 
 .big-card {
@@ -277,19 +282,29 @@ nav > button {
 }
 
 .big-card > p {
-    margin: 0px 70px 35px 40px
+    margin: 0px 4vw 35px 40px
 }
 
 .small-card {
     border-radius: 16px;
     background-color: white;
+    width: 20vw;
+    height: 20vw;
+}
+
+.small-card > img {
+    width: 100%;
 }
 
 .small-card > h3 {
     font-size: 1rem;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 1.5vw 0px 1.5vw;
+    
 }
 
+.black-btn {
+    font-family: "Quicksand", serif;
+}
 
 @media screen and (max-width: 576px) {
     .gray-writings {
@@ -335,6 +350,7 @@ nav > button {
         width: 131px;
         font-size: 1rem;
         border-radius: 8px;
+        
     }
 
     .hero-writings > h1 > span {
@@ -373,4 +389,44 @@ nav > button {
     .read-more-1, .read-more-2, .read-more-3 {
         font-size: 0.625rem;
     }
+
+    /* designing the story section  */
+    .stories {
+        background-size: auto;
+    }
+    .stories > h1 {
+        font-size: 1.625rem;
+    }
+
+    .big-card {
+        display: none;
+    }
+
+    .stories-card-container {
+        margin: 20px 0px;
+    }
+
+    .small-card-container {
+        height: 91.7vw;
+        width: 91.7vw;
+        gap: 10px;
+    }
+
+    .small-card {
+        height: 44vw;
+        width: 44vw;
+    }
+
+    .small-card > button {
+        font-size: 0.57rem;
+        border-radius: 28px;
+        padding: 6px 11px;
+        top: -4.5vw !important;
+    }
+    
+    .small-card > h3 {
+        font-size: 0.57rem;
+    }
+
+    
 }
