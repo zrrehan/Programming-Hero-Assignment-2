@@ -244,15 +244,13 @@ nav > button {
 .small-card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px
+    gap: 1.38vw;
 }
 
 .card-buttons {
     border: none;
     border-radius: 48px;
     font-family: "Raleway", serif;
-    /* height: 3vw;
-    width: 12vw; */
     padding: 0.69vw 1.3vw;
     color: white;
     /* margin-left: 38px; */
@@ -288,8 +286,8 @@ nav > button {
 .small-card {
     border-radius: 16px;
     background-color: white;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 21.15vw;
 }
 
 .small-card > img {
@@ -298,8 +296,7 @@ nav > button {
 
 .small-card > h3 {
     font-size: 1rem;
-    padding: 0px 1.5vw 0px 1.5vw;
-    
+    padding: 0px 1vw 0px 1vw;
 }
 
 .black-btn {
