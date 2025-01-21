@@ -303,6 +303,65 @@ nav > button {
     font-family: "Quicksand", serif;
 }
 
+/* designing footer  */
+footer {
+    background-color: #01ACFD;
+    color: white;
+    height: 222px;
+    padding: 8vw 15vw 12vw 9.7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo > p {
+    font-size: 2.625rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.footer-logo-description {
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about > a {
+    color: white;
+}
+
+.about > p {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.footer-logo {
+    display: flex;
+    gap: 10px;
+    height: 82px;
+}
+
+.footer-logo > img {
+    height: 82px;
+    width: 82px;
+}
+
+.in-touch {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.in-touch-img-container {
+    display: flex;
+    gap: 10px
+}
+
 @media screen and (max-width: 576px) {
     .gray-writings {
         font-size: 0.625rem;
@@ -425,5 +484,23 @@ nav > button {
         font-size: 0.57rem;
     }
 
-    
+    /* designing footer  */
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 32px;
+    }
+
+    .footer-logo-description {
+        width: 90%;
+        gap: 22px
+    }
+
+    .about {
+        gap: 17px;
+    }
+
+    .about > h2 {
+        margin-bottom: 10px;
+    }
 }
