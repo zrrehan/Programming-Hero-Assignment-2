@@ -33,6 +33,11 @@ nav {
     padding: 0px 16px;
 }
 
+nav > button:hover {
+    background-color: rgb(255, 190, 68);
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     justify-content: space-between;
@@ -303,6 +308,11 @@ nav > button {
     font-family: "Quicksand", serif;
 }
 
+.black-btn:hover {
+    background-color: rgb(38, 38, 38);
+    cursor: pointer;
+}
+
 /* designing footer  */
 footer {
     background-color: #01ACFD;
@@ -406,7 +416,10 @@ footer {
         width: 131px;
         font-size: 1rem;
         border-radius: 8px;
-        
+    }
+
+    .black-btn:hover {
+        background-color: black;
     }
 
     .hero-writings > h1 > span {
